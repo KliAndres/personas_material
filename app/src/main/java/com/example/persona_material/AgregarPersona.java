@@ -50,6 +50,7 @@ public class AgregarPersona extends AppCompatActivity {
     public  void limpiar(View v){
         limpiar();
     }
+
     public int foto_aleatoria(){
         int foto_seleccionada;
         Random r=new Random();
