@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "186820409906",
+    "firebase_url": "https://personasmaterial-a2a9f.firebaseio.com",
+    "project_id": "personasmaterial-a2a9f",
+    "storage_bucket": "personasmaterial-a2a9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186820409906:android:d28d8079772b1906671a2b",
+        "android_client_info": {
+          "package_name": "com.example.persona_material"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186820409906-h7ldbhuq4d0h2791loea11pugj1ience.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.persona_material",
+            "certificate_hash": "ea039bb347e897b65e27d2fc41ecc4262f81ab11"
+          }
+        },
+        {
+          "client_id": "186820409906-g6ced6nrgka4hsu7sgi25nv0213t2qj8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR4Kq0qVEffFPdcy3BbdxZ_dsdZnV9-s4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186820409906-g6ced6nrgka4hsu7sgi25nv0213t2qj8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
