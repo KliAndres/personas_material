@@ -17,4 +17,5 @@
     <string name="boton_limpiardfsd" />
     <string name="boton_limpiar">Limpiar</string>
     <string name="mensajeGuardadoCorrectamente">Persona Guardada Correctamente</string>
+    <string name="titulo_detalle">Detalle Persona</string>
 </resources>
