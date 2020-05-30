@@ -14,6 +14,7 @@ public class DetallePersona extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_persona);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ImageView foto;
         TextView cedula, nombre, apellido;
         Bundle bundle;
@@ -21,8 +22,8 @@ public class DetallePersona extends AppCompatActivity {
 
         foto = findViewById(R.id.imgFotoDetalle);
          cedula=findViewById(R.id.lblCedulaDetalle);
-         nombre=findViewById(R.id.lblNombre);
-         apellido=findViewById(R.id.lblApellido);
+         nombre=findViewById(R.id.lblNombreDetalle);
+         apellido=findViewById(R.id.lblApellidoDetalle);
 
         intent = getIntent();
         bundle =intent.getBundleExtra("datos");

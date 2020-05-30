@@ -33,7 +33,7 @@ public class Adaptador_Persona extends RecyclerView.Adapter<Adaptador_Persona.Pe
         holder.foto.setImageResource(p.getFoto());
         holder.cedula.setText(p.getCedula());
         holder.nombre.setText(p.getNombre());
-        holder.nombre.setText(p.getApellido());
+        holder.apellido.setText(p.getApellido());
 
         holder.v.setOnClickListener(new View.OnClickListener() {
             @Override

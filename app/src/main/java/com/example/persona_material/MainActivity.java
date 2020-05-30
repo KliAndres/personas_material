@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity implements Adaptador_Persona
         Intent intent;
         Bundle bundle;
         bundle=new Bundle();
-        bundle.putString("cedula",p.getCedula());
-        bundle.putString("nombre",p.getNombre());
+        bundle.putString("cedula", p.getCedula());
+        bundle.putString("nombre", p.getNombre());
         bundle.putString("apellido", p.getApellido());
         bundle.putInt("foto", p.getFoto());
 

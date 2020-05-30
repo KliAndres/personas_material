@@ -2,6 +2,7 @@ package com.example.persona_material;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,11 +19,11 @@ public class AgregarPersona extends AppCompatActivity {
     private ArrayList<Integer> fotos;
     private EditText cedula, nombre, apellido;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_persona);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         cedula = findViewById(R.id.txtCedula);
         nombre = findViewById(R.id.txtNombre);
         apellido = findViewById(R.id.txtApellido);
