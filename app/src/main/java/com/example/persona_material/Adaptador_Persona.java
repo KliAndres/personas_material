@@ -13,9 +13,11 @@ import java.util.ArrayList;
 
 public class Adaptador_Persona extends RecyclerView.Adapter<Adaptador_Persona.PersonaViewHolder>{
     private ArrayList<Persona> personas;
+    private OnPersonaClickListener clickListener;
 
-    public Adaptador_Persona(ArrayList<Persona>personas){
+    public Adaptador_Persona(ArrayList<Persona>personas, OnPersonaClickListener clickListener){
         this.personas = personas;
+        this.clickListener = clickListener;
     }
 
     @NonNull
@@ -27,11 +29,18 @@ public class Adaptador_Persona extends RecyclerView.Adapter<Adaptador_Persona.Pe
 
     @Override
     public void onBindViewHolder(@NonNull PersonaViewHolder holder, int position) {
-        Persona p=personas.get(position);
+        final Persona p=personas.get(position);
         holder.foto.setImageResource(p.getFoto());
         holder.cedula.setText(p.getCedula());
         holder.nombre.setText(p.getNombre());
         holder.nombre.setText(p.getApellido());
+
+        holder.v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickListener.OnPersonaClick(p);
+            }
+        });
     }
 
     @Override
@@ -54,5 +63,8 @@ public class Adaptador_Persona extends RecyclerView.Adapter<Adaptador_Persona.Pe
             nombre=v.findViewById(R.id.lblNombre);
             apellido=v.findViewById(R.id.lblApellido);
         }
+    }
+    public interface OnPersonaClickListener{
+        void OnPersonaClick(Persona p);
     }
 }
