@@ -21,6 +21,9 @@ public class Persona {
         this.foto=foto;
         this.id=id;
     }
+    public Persona(){
+
+    }
 
     public String getId() {
         return id;
