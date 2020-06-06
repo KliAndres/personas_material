@@ -17,10 +17,11 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="204sp"
-        android:layout_height="204sp"
+        android:id="@+id/imgFotoSeleccionada"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
         android:layout_gravity="center_horizontal"
+        android:onClick="seleccionarFoto"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <EditText

@@ -55,8 +55,9 @@
 
         <ImageView
             android:id="@+id/imgFotoDetalle"
-            android:layout_width="match_parent"
-            android:layout_height="171dp" />
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_gravity="center_horizontal" />
 
         <TableLayout
             android:id="@+id/tblTablaDetalle"
